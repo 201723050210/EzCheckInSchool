@@ -50,15 +50,15 @@ def main():
         exit(1)
     # 时间判断 Github Actions采用国际标准时
     hms = update_time()
-    if (hms[0] >= 6) & (hms[0] < 8):
+    if (hms[0] >= 0) & (hms[0] < 2):
         template_id = "clockSign1"
         customer_app_type_rule_id = 146
-    elif (hms[0] >= 12) & (hms[0] < 14):
-        template_id = "clockSign2"
-        customer_app_type_rule_id = 147
-    elif (hms[0] >= 21) & (hms[0] <= 22):
-        template_id = "clockSign3"
-        customer_app_type_rule_id = 148
+#     elif (hms[0] >= 12) & (hms[0] < 14):
+#         template_id = "clockSign2"
+#         customer_app_type_rule_id = 147
+#     elif (hms[0] >= 21) & (hms[0] <= 22):
+#         template_id = "clockSign3"
+#         customer_app_type_rule_id = 148
     else:
         print("现在是%d点%d分，将打卡早间档测试" % (hms[0], hms[1]))
         template_id = "clockSign1"
@@ -78,10 +78,10 @@ def main():
                 "deptid": class_id,
                 "text": dept_text
             },
-            "areaStr": {"streetNumber": "", "street": "长椿路辅路", "district": "中原区", "city": "郑州市", "province": "河南省",
-                        "town": "", "pois": "河南工业大学(莲花街校区)", "lng": 113.544407 + random.random() / 10000,
-                        "lat": 34.831014 + random.random() / 10000, "address": "中原区长椿路辅路河南工业大学(莲花街校区)",
-                        "text": "河南省-郑州市", "code": ""},
+            "areaStr": {"streetNumber": "", "street": "天津路", "district": "涧西区", "city": "洛阳市", "province": "河南省",
+                        "town": "", "pois": "瀛洲新村", "lng": 113.544407 + random.random() / 10000,
+                        "lat": 34.831014 + random.random() / 10000, "address": "涧西区天津路瀛洲新村7栋2门701",
+                        "text": "河南省-洛阳市", "code": ""},
             "reportdate": round(time.time() * 1000),
             "customerid": 43,
             "deptid": class_id,
