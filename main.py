@@ -79,8 +79,8 @@ def main():
                 "text": dept_text
             },
             "areaStr": {"streetNumber": "", "street": "天津路", "district": "涧西区", "city": "洛阳市", "province": "河南省",
-                        "town": "", "pois": "瀛洲新村", "lng": 113.544407 + random.random() / 10000,
-                        "lat": 34.831014 + random.random() / 10000, "address": "涧西区天津路瀛洲新村7栋2门701",
+                        "town": "", "pois": "瀛洲新村", "lng": 112.397759 + random.random() / 10000,
+                        "lat": 34.65161 + random.random() / 10000, "address": "涧西区天津路瀛洲新村7栋2门701",
                         "text": "河南省-洛阳市", "code": ""},
             "reportdate": round(time.time() * 1000),
             "customerid": 43,
